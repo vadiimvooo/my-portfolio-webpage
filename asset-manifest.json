@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/my-portfolio-webpage/static/css/main.ed83c938.css",
+    "main.js": "/my-portfolio-webpage/static/js/main.363942f1.js",
+    "static/media/Screenshot_1.png": "/my-portfolio-webpage/static/media/Screenshot_1.be05eba816c3b5bb2e19.png",
+    "static/media/Screenshot_2.png": "/my-portfolio-webpage/static/media/Screenshot_2.ef0204af70a957814507.png",
+    "static/media/me.jpeg": "/my-portfolio-webpage/static/media/me.5a3afb6b05884ca194ac.jpeg",
+    "static/media/zyro-image.png": "/my-portfolio-webpage/static/media/zyro-image.e92450eb1c3b517c6f5a.png",
+    "static/media/bcg-2.png": "/my-portfolio-webpage/static/media/bcg-2.84294caba5d672427623.png",
+    "static/media/bcg-3.png": "/my-portfolio-webpage/static/media/bcg-3.60a65088850b237a9ee8.png",
+    "static/media/dark-zyro-image.png": "/my-portfolio-webpage/static/media/dark-zyro-image.e4b95805dd4c64feb37e.png",
+    "static/media/bcg-1.png": "/my-portfolio-webpage/static/media/bcg-1.67f08a26aca2dbbc8d63.png",
+    "static/media/Screenshot_3.png": "/my-portfolio-webpage/static/media/Screenshot_3.c04cc2b6f95d285d2fa7.png",
+    "static/media/full-stack.jpg": "/my-portfolio-webpage/static/media/full-stack.855e94a218e1d4a217d0.jpg",
+    "static/media/experience-dark.svg": "/my-portfolio-webpage/static/media/experience-dark.2498d506e6c209d2fe231add1dc8e4b0.svg",
+    "static/media/experience.svg": "/my-portfolio-webpage/static/media/experience.3fa916b024a508ea673d130e44201f1f.svg",
+    "static/media/Projects-dark.svg": "/my-portfolio-webpage/static/media/Projects-dark.8d5f649316b66cdba4e1b2eb7bc9485e.svg",
+    "static/media/Projects.svg": "/my-portfolio-webpage/static/media/Projects.376bd2ba8843db176b173f62392fcc50.svg",
+    "static/media/education-dark.svg": "/my-portfolio-webpage/static/media/education-dark.81a3cd0e2a6cd680f4385ee809e0f8ab.svg",
+    "static/media/calendar.svg": "/my-portfolio-webpage/static/media/calendar.9f7c7cf25e2ec5672ca1.svg",
+    "static/media/education.svg": "/my-portfolio-webpage/static/media/education.fc6cfe062aeb07e28d5133f1866c8af1.svg",
+    "index.html": "/my-portfolio-webpage/index.html",
+    "static/media/arrow-next.svg": "/my-portfolio-webpage/static/media/arrow-next.e6380753bb5821848267.svg",
+    "static/media/arrow-prev.svg": "/my-portfolio-webpage/static/media/arrow-prev.5372f3e31a22730787c8.svg",
+    "main.ed83c938.css.map": "/my-portfolio-webpage/static/css/main.ed83c938.css.map",
+    "main.363942f1.js.map": "/my-portfolio-webpage/static/js/main.363942f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed83c938.css",
+    "static/js/main.363942f1.js"
+  ]
+}
