@@ -1,0 +1,71 @@
+@import '../../styles/helpers/variables.scss';
+@import '../../styles/helpers/mixins.scss';
+
+.QualificationCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  height: 150px;
+  padding: 14px 10px;
+  border: $line-break;
+  border-radius: 10px;
+  margin-right: 10px;
+
+  &:not(:last-child) {
+    @include for-small-desktop-up {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__profession-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.3;
+
+    color: $text-color;
+  }
+
+  &__profession-degree {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.3;
+
+    color: $text-color;
+  }
+
+  &__location {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 5px;
+
+    color: black;
+  }
+
+  &__duration {
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $secondary-text-color;
+    padding-left: 26px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      @include size(15px);
+
+      content: '';
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('../../images/icons/calendar.svg');
+    }
+  }
+
+  &--dark-theme {
+    color: $secondary-text-color;
+  }
+}

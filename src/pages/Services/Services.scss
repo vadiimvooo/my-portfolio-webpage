@@ -1,0 +1,23 @@
+@import '../../styles/helpers/variables.scss';
+
+.Services {
+  text-align: center;
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+
+    color: #616161;
+  }
+
+  &__image {
+    margin-top: 40px;
+    border-radius: 20px;
+  }
+
+  &__service-name {
+    font-size: 20px;
+    color: $text-color;
+  }
+}

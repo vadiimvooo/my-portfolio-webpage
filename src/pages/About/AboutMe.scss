@@ -1,0 +1,12 @@
+@import '../../styles/helpers/variables.scss';
+@import '../../styles/helpers/mixins.scss';
+
+.AboutMe {
+  &__section:not(:last-child) {
+    margin-bottom: 40px;
+
+    @include for-tablet-landscape-up {
+      margin-bottom: 20px;
+    }
+  }
+}

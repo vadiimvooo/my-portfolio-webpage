@@ -1,0 +1,33 @@
+@import '../../styles/helpers/variables.scss';
+@import '../../styles/helpers/mixins.scss';
+
+.About {
+  &__header {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: $primary-color;
+
+    @include for-small-desktop-up {
+      font-size: 30;
+      line-height: 40px;
+    }
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: $secondary-text-color;
+    max-width: 594px;
+
+    margin-bottom: 20px;
+  }
+
+  &__experience-container {
+    display: flex;
+    gap: 48px;
+  }
+}

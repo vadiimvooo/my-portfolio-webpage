@@ -1,0 +1,79 @@
+@import '../../styles/helpers/variables.scss';
+@import '../../styles/helpers/mixins.scss';
+
+.Qualification {
+  display: flex;
+  flex-direction: column;
+
+  &__header-container {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    margin-bottom: 10px;
+
+    @include for-tablet-landscape-up {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+
+  &__header {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: $primary-color;
+
+    @include for-small-desktop-up {
+      font-size: 30PX;
+      line-height: 40px;
+    }
+    
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 21px;
+
+    color: $secondary-text-color;
+    max-width: 594px;
+  }
+
+  &__profession {
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+    padding-bottom: 7px;
+    border-bottom: $line-break;
+    margin-bottom: 20px;
+
+    @include for-small-desktop-up {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__profession-description {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: $text-color;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 20px;
+
+    @include for-small-desktop-up {
+      flex-direction: column-reverse;
+      height: 155px;
+      align-self: center;
+      width: max-content;
+      overflow: auto;
+    }
+  }
+
+  &--dark-theme {
+    color: $secondary-text-color;
+  }
+}

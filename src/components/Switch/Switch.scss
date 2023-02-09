@@ -1,0 +1,45 @@
+@import '../../styles/helpers/variables.scss';
+
+.Switch {
+  position: relative;
+  display: inline-block;
+  align-self: center;
+  width: 54px;
+  height: 30px;
+
+  &__checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked + .Switch__slider .Switch__slider-mode {
+      transform: translateX(24px);
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    cursor: pointer;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    border: 2px solid $primary-color;
+    border-radius: 50px;
+  }
+
+  &__slider-mode {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    top: 4px;
+    fill: white;
+
+    background-color: $primary-color;
+    border-radius: 50%;
+  }
+}

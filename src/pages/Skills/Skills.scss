@@ -1,0 +1,77 @@
+@import '../../styles/helpers/mixins.scss';
+@import '../../styles/helpers/variables.scss';
+
+.Skills {
+  &__header-container {
+    @include for-tablet-landscape-up {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__profession-container {
+    text-align: center;
+    margin-bottom: 80px;
+
+    @include for-tablet-landscape-up {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__profession-header {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: $text-color;
+  }
+
+  &__profession-description {
+    font-size: 14px;
+    line-height: 21px;
+
+    color: $secondary-text-color;
+  }
+
+  &__cards {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+
+    @include for-desktop-up {
+      gap: 30px;
+    }
+  }
+  
+  &__card {
+    text-align: center;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.4)
+    }
+  }
+
+  &__icons {
+    @include size(70px);
+    fill: $text-color;
+
+    @include for-desktop-up {
+      @include size(50px);
+    }
+
+    @include for-tablet-landscape-up {
+      @include size(35px)
+    }
+  }
+
+  &__icon-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: $text-color
+  }
+}

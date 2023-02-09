@@ -1,0 +1,142 @@
+@import '../../styles/helpers/placeholders.scss';
+@import '../../styles/helpers/mixins.scss';
+@import '../../styles/helpers/variables.scss';
+
+.page {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+
+  @include for-tablet-landscape-up {
+    min-width: 900px;
+  }
+  
+  &__gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #4A6BE1 0%, #E14A65 100%);
+  }
+
+  &__element {
+    position: absolute;
+  
+    width: 700px;
+    height: 500px;
+  
+    background-size: 700px 500px;
+  
+    @include for-big-desktop-up {
+      width: 500px;
+      height: 300px;
+  
+      background-size: 500px 300px;
+    }
+  
+    @include for-small-desktop-up {
+      width: 400px;
+      height: 200px;
+  
+  
+      background-size: 400px 200px;
+    }
+  
+    @include for-phone-only {
+      width: 250px;
+      height: 150px;
+  
+  
+      background-size: 250px 150px;
+    }
+  }
+  
+  &__element--1 {
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+  
+    background-image: url('../../images/background/bcg-1.png');
+  }
+  
+  &__element--2 {
+    left: 30%;
+    bottom: 0;
+    background-repeat: no-repeat;
+  
+    background-image: url('../../images/background/bcg-2.png');
+  }
+  
+  &__element--3 {
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+  
+    background-image: url('../../images/background/bcg-3.png');
+  }
+
+  &__blur {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    min-height: 100vh;
+    background-color: rgba($color: #0a0529, $alpha: 0.5);
+  }
+  
+  &__content {
+    margin: auto 50px;
+
+    @include for-small-height {
+      margin: 50px 50px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url(../../images/background/zyro-image.png);
+    background-position: center;
+    min-width: 600px;
+    width: 1600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+
+    border-radius: $border-radius;
+    box-shadow: 0px 14px 40px 0px rgba(0,0,0,0.75);
+
+    &--dark-theme {
+      background-image: url(../../images/background/dark-zyro-image.png);
+    }
+  }
+
+  &__dark-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
+  }
+
+  &__info {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  &__main-content {
+    position: relative;
+    border: 1px solid $border-color;
+    width: 100%;
+    border-bottom-right-radius: 30px;
+    padding: 10px 50px 50px;
+    overflow: hidden;
+  }
+}
+

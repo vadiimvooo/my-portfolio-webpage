@@ -1,0 +1,150 @@
+@import '../../styles/helpers/variables.scss';
+@import '../../styles/helpers/mixins.scss';
+
+.Portfolio {
+  box-sizing: border-box;
+
+  &__swiper {
+    overflow: visible !important;
+  }
+
+  ul &__swiper-slide {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+    gap: 48px;
+
+    @include for-desktop-up {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__swiper-text {
+    padding: 25px 0px 25px;
+    max-width: 400px;
+
+    @include for-desktop-up {
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  &__swiper-image {
+    width: 428px;
+    height: 238px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    align-self: center;
+    box-shadow: -1px 11px 43px -12px rgba(0,0,0,0.75);
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    @include Laptop-l {
+      width: 328px;
+      height: 170px;
+    }
+
+    @include for-small-desktop-up {
+      width: 228px;
+      height: 130px;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__swiper-header {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: $text-color;
+    margin-bottom: 20px;
+
+    @include Laptop-l {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__swiper-description {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 40px;
+
+    @include Laptop-l {
+      margin-bottom: 25px;
+    }
+
+    color: $swiper-desc-color;
+  }
+
+  &__swiper-link {
+    padding: 10px 40px;
+    gap: 10px;
+
+    width: 127px;
+    height: 44px;
+
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    border-radius: 50px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: white;
+      background-color: $primary-color;
+    }
+  }
+
+  &__swiper-pagination {
+    margin: auto;
+    width: 70px !important;
+    transform: translateX(0) !important;
+    transform: translateY(100%) !important;
+
+    & span {
+      width: 15px;
+      height: 15px;
+      background-color: #B3CBD9;
+
+      .swiper-pagination-bullet-active-prev {
+        background-color: #B3CBD9 !important;
+      }
+    }
+
+    .swiper-pagination-bullet-active-main {
+      background-color: $primary-color;
+    }
+  }
+
+  &__swiper-next-button {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-50%);
+    background-image: url(../../images/arrow-next.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__swiper-prev-button {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-50%);
+    background-image: url(../../images/arrow-prev.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,32 @@
+@import '../helpers/variables.scss';
+
+.Section {
+  &__header-container {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__header {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: $text-color;
+  }
+
+  &__header-description {
+    font-size: 14px;
+    line-height: 21px;
+
+    color: $secondary-text-color;
+  }
+
+  &--dark-theme {
+    color: $secondary-text-color !important;
+    fill: $secondary-text-color !important;
+  }
+
+  &--dark-theme-shadow {
+    box-shadow: -1px 11px 43px -12px $primary-color !important;
+  }
+}

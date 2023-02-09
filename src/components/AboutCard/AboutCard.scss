@@ -1,0 +1,43 @@
+@import '../../styles/helpers/mixins.scss';
+@import '../../styles/helpers/variables.scss';
+
+.AboutCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  user-select: none;
+  @include size(150px);
+  padding: 14px;
+
+  @include for-small-desktop-up {
+    height: 125px;
+  }
+
+  &__image {
+    fill: $primary-color;
+    @include size(25px)
+  }
+
+  &__description-container {
+    display: flex;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 21px;
+
+    color: $text-color;
+  }
+
+  &__years {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+
+    color: $text-color;
+  }
+
+  &--dark-theme{
+    color: $secondary-text-color;
+  }
+}

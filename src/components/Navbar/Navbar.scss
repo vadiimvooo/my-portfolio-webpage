@@ -1,0 +1,58 @@
+@import '../../styles/helpers/variables.scss';
+@import '../../styles/helpers/mixins.scss';
+
+.Navbar{
+  display: flex;
+  padding: 16px 32px;
+  justify-content: space-between;
+  border: 1px solid $border-color;
+  border-top-right-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+
+  &__navigation {
+    display: flex;
+    gap: 60px;
+
+    @include for-desktop-up {
+      gap: 40px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__link {
+    display: block;
+    padding: 15px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: $primary-color;
+
+    transition: color 0.3s;
+
+    &:visited {
+      color: $primary-color;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+    
+   
+  }
+
+  &__main-link {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.5;
+
+
+    color: $primary-color;
+  }
+}
