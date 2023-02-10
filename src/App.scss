@@ -3,6 +3,8 @@
 @import './styles/helpers/mixins.scss';
 
 .App {
+  overflow-y: hidden;
+
   &__burger-menu {
     display: none;
     color: white;
